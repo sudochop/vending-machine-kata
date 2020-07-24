@@ -1,3 +1,22 @@
+```
+----------- coverage: platform linux, python 3.8.3-final-0 -----------
+Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+vendy/__init__.py        0      0   100%
+vendy/coin.py           14      0   100%
+vendy/inventory.py       4      0   100%
+vendy/machine.py        73      0   100%
+vendy/product.py         5      0   100%
+vendy/register.py       29      0   100%
+vendy/store.py          17      0   100%
+vendy/utils.py           7      0   100%
+--------------------------------------------------
+TOTAL                  149      0   100%
+
+Required test coverage of 100% reached. Total coverage: 100.00%
+```
+
+
 Vending Machine Kata
 ====================
 
