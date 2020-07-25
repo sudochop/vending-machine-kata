@@ -37,7 +37,6 @@ class TestMachine:
         self, vm: Machine, provided: List[Coin], expected_back: Optional[Coin],
     ) -> None:
         vm = Machine([(Product(price="1.00"), 1)])
-        print(vm.pending)
         back = list(filter(None, map(vm.insert_coin, provided)))
         assert back == expected_back
 
