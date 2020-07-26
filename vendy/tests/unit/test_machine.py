@@ -12,7 +12,6 @@ p_chips = Product("candy", "0.50")
 
 
 class TestMachine:
-    @pytest.mark.parametrize("vm", [Machine([(Product(price="1.00"), 1)])])
     @pytest.mark.parametrize(
         "provided, expected_back",
         [
@@ -34,7 +33,7 @@ class TestMachine:
         ],
     )
     def test_insert_coin(
-        self, vm: Machine, provided: List[Coin], expected_back: Optional[Coin],
+        self, provided: List[Coin], expected_back: Optional[Coin],
     ) -> None:
         vm = Machine([(Product(price="1.00"), 1)])
         back = list(filter(None, map(vm.insert_coin, provided)))
