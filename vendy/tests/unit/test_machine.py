@@ -68,7 +68,6 @@ class TestMachine:
     ) -> None:
         assert vm.select_product(selection) == expected_dispense
 
-    # TODO FIX
     @pytest.mark.parametrize(
         "vm, expected",
         [(Machine(pending=[]), []), (Machine(pending=[Coin.Q]), [Coin.Q])],
